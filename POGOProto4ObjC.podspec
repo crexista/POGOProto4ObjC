@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
   src = 'POGOProtos'
 
   # We'll use protoc with the gRPC plugin.
-  s.dependency '!ProtoCompiler-gRPCPlugin', '~> 1.0.0-pre1.2'
+  s.dependency '!ProtoCompiler', '~> 3.0.0'
 
   # Pods directory corresponding to this app's Podfile, relative to the location of this podspec.
-  pods_root = '~/Sources/iOS/ProtobufTest/ProtobufTest/Pods'
+  pods_root = File.expand_path(File.dirname(__FILE__))+'/../Pods'
 
   # Path where Cocoapods downloads protoc and the gRPC plugin.
   protoc_dir = "#{pods_root}/!ProtoCompiler"
