@@ -34,3 +34,4 @@ bundle
 GoogleAccount.swift
 Gemfile.lock
 .bundle/*
+objc/*
